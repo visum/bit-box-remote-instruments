@@ -1,0 +1,17 @@
+{
+  "name": "bit-box-remote-instruments",
+  "version": "1.0.0",
+  "description": "A simple server that enables remote bitbox instruments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "qrcode": "^1.4.2",
+    "websocket": "^1.0.30"
+  }
+}
