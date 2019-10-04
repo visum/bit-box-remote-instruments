@@ -5,15 +5,20 @@
   </head>
   <body>
     <h2>List of instruments</h2>
-    <a href="/theremin.html">Theremin</a>
+    <ul>
+      <li><a href="/theremin.html">Theremin</a></li>
+      <li><a href="/drums.html">Drums</a></li>
+    </ul>
     <br />
     <img src="" id="qrcode" />
     <br />
     <span id="url"></span>
     <script>
-      fetch("/qrcode").then(response => response.text()).then(text => {
-        document.querySelector("#qrcode").src = text;
-      });
+      fetch("/qrcode")
+        .then(response => response.text())
+        .then(text => {
+          document.querySelector("#qrcode").src = text;
+        });
       document.querySelector("#url").textContent = document.location.href;
     </script>
   </body>
