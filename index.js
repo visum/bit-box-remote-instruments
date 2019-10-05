@@ -42,7 +42,6 @@ const getNetworkAddress = () => {
 };
 
 server.listen(port, function() {
-  console.log(new Date() + " Server is listening on port " + port);
   console.log("listening on https://" + getNetworkAddress() + ":" + port);
 });
 
